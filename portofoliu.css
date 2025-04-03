@@ -1,0 +1,319 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0B2447;
+    display: flex;
+    overflow-x: hidden;
+    height: 10vh;
+    overflow-y: visible;
+}
+
+.right_part {
+    max-width: 50%;
+    position: absolute;
+    right: 0%;
+    font-size: 1.25rem;
+    color: #A5D7E8;
+    padding: 5vw;
+    line-height: 1.8rem;
+}
+b{
+    color: aliceblue;
+}
+p{
+    margin-bottom: 30px;
+}
+
+.left_part {
+    position: fixed;
+    max-width: 50%;
+}
+
+.prezentare {
+    color: #A5D7E8;
+    font-family: "Roboto";
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.prezentare h1 {
+    color: aliceblue;
+    font-family: "Big Shoulders Stencil";
+    font-size: 4rem;
+    margin-bottom: 0%;
+}
+
+.prezentare h2 {
+    color: aliceblue;
+    margin-top: 10px;
+    font-size: 2rem;
+
+}
+
+.prezentare h3 {
+    font-size: 1.2rem;
+    margin: 0%;
+}
+
+.sectiune {
+    margin-left: 100px;
+    margin-top: 65px;
+    color: #A5D7E8;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+
+.sectiune p {
+    margin-top: 25px;
+}
+
+.sectiune_wrap:hover {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.liniuta {
+    width: 25px;
+    border-bottom: 2px solid #A5D7E8;
+    margin-right: 12px;
+    height: 33.5px;
+}
+
+.sectiune_wrap:hover .liniuta {
+    border-bottom: 2px solid aliceblue;
+    width: 60px;
+    transition: all 0.2s;
+}
+
+.sectiune_wrap {
+    display: flex;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 490vh;
+    overflow:hidden;
+}
+
+
+.glow {
+    display:block;
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0) 80%);
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    transform: (-50%, -50%);
+    transition: transform 0.05s linear;
+}
+
+
+.experience-wrap, .project-wrap{
+    display: flex;
+    padding: 30px;
+    padding-bottom: 0%;
+    margin-bottom: 20px;
+}
+.perioada, .imagine{
+    width:40% !important;
+    font-size: 1.2vw;
+    
+}
+
+.perioada{
+    text-align: center;
+}
+
+.descriere{
+    margin-top: 40px;
+}
+
+.experienta{
+    width: 60%;
+}
+
+.experience-wrap:hover {
+    background-color: #0e2e5a;
+    border-radius: 5px;
+    border-top: 1px solid #134c9b;
+    box-shadow: 0px 5px 5px #09264e;
+    color:aliceblue;
+}
+
+.experience-wrap:hover b{
+    color: #68c5e4;
+}
+
+.experience-wrap:hover .glow{
+    z-index: -999;
+}
+
+.project{
+    width: 75%;
+}
+
+.project-wrap:hover {
+    background-color: #0e2e5a;
+    border-radius: 5px;
+    border-top: 1px solid #134c9b;
+    box-shadow: 0px 5px 5px #09264e;
+    color:aliceblue;
+}
+
+.project-wrap:hover b{
+    color: #68c5e4;
+}
+
+.project-wrap:hover .glow{
+    z-index: -999;
+}
+
+a:link {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  a {
+  display:flex;
+  }
+
+  .contact{
+    font-family: 'Courier New', monospace;
+    background-color: #09264e;
+    color: #0ff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 110px;
+  }
+
+img{
+    height: 100px;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        display: none;
+    }
+
+    .liniuta{
+        display: none;
+    }
+
+        body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_part{
+        position:relative;
+        max-width: 100%;
+        color: #94A3B8;
+    }
+
+    .right_part{
+        position: relative;
+        width: 90vw;
+        max-width: 100%;
+        padding: 0%;
+        padding-left: 20px;
+        margin-top: 80px;
+        color: #94A3B8;
+    }
+
+    .prezentare{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .prezentare h1{
+        font-size: 3.2rem;
+    }
+
+    .prezentare h2{
+        font-size: 1.8rem;
+    }
+
+    .prezentare h3{
+        font-size: 1.2rem;
+    }
+
+    .sectiune{
+        display: none;
+    }
+
+    .contact{
+        margin-top: 30px;
+        margin-left: 10px;
+        color:#94A3B8;
+    }
+
+    .hidden{
+        display: block;
+    }
+
+    .experience-wrap{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        padding: 0%;
+    }
+
+    .perioada{
+      width: 100% !important;
+      font-size: 1.3rem;
+      margin-left: -5.3%;
+      color: aliceblue;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    
+
+    .descriere{
+        width: 100%;
+        
+    }
+
+    .experienta{
+        width: 100%;
+        padding: 0%;
+        margin: none;
+        margin-top: 30px;
+    }
+
+    .project-wrap{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        padding: 0%;
+    }
+
+    .imagine{
+        display: none;
+    }
+
+    h3{
+        color:#94A3B8
+    }
+    
+    .hidden{
+        margin-bottom: 30px;
+    }
+    
+}
